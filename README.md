@@ -4,6 +4,16 @@
 ### 步骤如下： 
 - 首先，fork 这个仓库。 
 - 接着，编辑 build_ErfanGSIs.yml 文件，把其中的 ROM_URL 改成你要做 gsi 的底包（注意直链）；还有 ROM_NAME 改成你的 ROM 名称。 
+
+sudo sed -i '7c AB=false' url2GSI.sh
+sudo sed -i '8c Aonly=true' url2GSI.sh
+单跑AB以此类推[流汗滑稽]
+sudo sed -i '7c AB=true' url2GSI.sh
+sudo sed -i '8c Aonly=false' url2GSI.sh
+
+单跑AB以此类推[流汗滑稽]
+sudo sed -i '7c AB=true' url2GSI.sh
+sudo sed -i '8c Aonly=false' url2GSI.sh
 - 然后，按 Star 小星星就可以开始了！ 
 - 最后，在 Upload GSI 里展开，看 Download Link 链接，访问即可下载。 
 
